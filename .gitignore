@@ -12,6 +12,15 @@
 bin/
 gen/
 
+# Local configuration file
+local.properties
+
+# Windows files
+Thumbs.db
+
+# OSX files
+.DS_Store
+
 # Gradle files
 .gradle/
 build/
@@ -30,3 +39,11 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# Android Studio
+*.iml
+*.iws
+.idea/libraries
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/workspace.xml
