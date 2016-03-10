@@ -1,11 +1,23 @@
 <resources>
 
     <!-- Application theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="AppTheme.base">
+    </style>
+
+    <!-- Base theme -->
+    <style name="AppTheme.base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Toolbar -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
         <!-- Colours -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Toolbar theme -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
     </style>
 
 </resources>
