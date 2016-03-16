@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Step</string>
 
-    <string name="hello">Explore, Dream, Discover</string>
+    <string name="explore">Explore, Dream, Discover</string>
     <string name="today">Today</string>
+
+    <string name="day">Monday</string>
+    <string name="date">1</string>
 </resources>

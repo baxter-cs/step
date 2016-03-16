@@ -6,4 +6,9 @@
     <!-- Toolbar margins -->
     <dimen name="toolbar_height">56dp</dimen>
     <dimen name="toolbar_horizontal_margin">32dp</dimen>
+
+    <!-- Main activity margins -->
+    <dimen name="intro_horizontal_margin">32dp</dimen>
+    <dimen name="intro_vertical_margin">16dp</dimen>
+
 </resources>

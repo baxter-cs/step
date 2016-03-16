@@ -16,23 +16,40 @@
             android:id="@+id/toolbar"
             layout="@layout/toolbar" />
 
-        <TextView
-            android:id="@+id/hello"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/main_linear_body"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/hello"
-            android:textSize="10pt"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center" />
+            android:paddingBottom="@dimen/intro_vertical_margin"
+            android:paddingLeft="@dimen/intro_horizontal_margin"
+            android:paddingRight="@dimen/intro_horizontal_margin"
+            android:paddingTop="@dimen/intro_vertical_margin"
+            android:orientation="vertical">
 
-        <TextClock
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                fontPath="fonts/Proxima Nova Regular.otf"
+                android:textSize="9pt"
+                android:textColor="@color/textColorSecondary"
+                android:text="@string/day"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="35pt"
+                android:textColor="@color/colorBlue"
+                android:text="@string/date"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
