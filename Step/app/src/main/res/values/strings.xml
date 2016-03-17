@@ -4,6 +4,9 @@
     <string name="explore">Explore, Dream, Discover</string>
     <string name="today">Today</string>
 
+    <string name="menu_edit">Edit</string>
+    <string name="menu_add">Add</string>
+
     <string name="day">Monday</string>
     <string name="date">1</string>
 </resources>

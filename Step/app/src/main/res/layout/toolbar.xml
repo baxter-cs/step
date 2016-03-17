@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/today"
         android:textColor="@color/textColorPrimary"
-        android:textSize="13pt"
+        android:textSize="12pt"
         android:layout_marginStart="@dimen/toolbar_horizontal_margin" />
 
 </android.support.v7.widget.Toolbar>
