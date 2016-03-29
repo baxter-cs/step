@@ -1,10 +1,10 @@
 package org.baxter_academy.step;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.SpannableString;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -27,15 +27,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        // Dates
-        SimpleDateFormat sdfDay = new SimpleDateFormat("EEEE, MMM");
-            String timeDay = sdfDay.format(new Date());
-            TextView textDay = (TextView) findViewById(R.id.day);
-            textDay.setText(timeDay);
-        SimpleDateFormat sdfDate = new SimpleDateFormat("dd");
-            String timeDate = sdfDate.format(new Date());
-            TextView textDate = (TextView) findViewById(R.id.date);
-            textDate.setText(timeDate);
+        // Intro
+        setTodayDates();
     }
 
     @Override
@@ -51,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case R.id.menu_add:
                 Toast.makeText(this, "Adding", Toast.LENGTH_SHORT).show();
+                Intent addActivity = new Intent(MainActivity.this, AddActivity.class);
+                startActivity(addActivity);
                 return true;
             case R.id.menu_edit:
                 Toast.makeText(this, "Editing", Toast.LENGTH_LONG).show();
@@ -63,5 +58,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    public void setTodayDates() {
+        SimpleDateFormat sdfDay = new SimpleDateFormat("EEEE, MMM");
+            String timeDay = sdfDay.format(new Date());
+            TextView textDay = (TextView) findViewById(R.id.day);
+            textDay.setText(timeDay);
+        SimpleDateFormat sdfDate = new SimpleDateFormat("dd");
+            String timeDate = sdfDate.format(new Date());
+            TextView textDate = (TextView) findViewById(R.id.date);
+            textDate.setText(timeDate);
     }
 }
